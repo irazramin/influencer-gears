@@ -117,8 +117,8 @@ body {
     margin-top: 100px;
     border-top: 2px solid #f2f2f2;
     border-bottom: 2px solid #f2f2f2;
-    padding: 10px;
     flex-wrap: wrap;
+    padding: 0;
 }
 
 /* ============================
@@ -199,8 +199,6 @@ body {
     margin-top: 50px;
     border: none;
     background-color: transparent;
-    position: relative;
-    left: 810px;
 }
 
 
@@ -257,6 +255,12 @@ footer small {
 ========================== */
 
 @media only screen and (max-width:688px) {
+    /* header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+
     .container {
         width: 100%;
     }
@@ -269,17 +273,26 @@ footer small {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
 
-    .header-content-image {
-       width: 100%;
-        /* margin-right:30px ; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .header-content-title {
+        text-align: center;
+    }
+
+    .header-content-image img {
+      width: 202px;
+      height: 190px;
+
     }
 
     .popular-products {
         grid-template-columns: repeat(1, 1fr);
+        margin: 20px;
+    }
+
+    .popular-product img {
+        width: 100%;
+        object-fit: cover;
     }
 }
