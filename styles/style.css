@@ -66,6 +66,7 @@ body {
 
 .nav-items ul li {
     margin-right: 35px;
+    
 }
 
 .nav-items ul li a {
@@ -73,6 +74,7 @@ body {
     color: #3A3A3A;
     font-size: 16px;
     font-weight: 600;
+    
 }
 
 .nav-items ul li a:hover {
@@ -128,7 +130,7 @@ body {
 .header-content-image img {
     width: 340px;
     height: 310px;
-    transition: transform .7s ease-out;
+    transition: transform .5s ease-out;
 }
 
 .header-content-image img:hover {
@@ -169,7 +171,7 @@ body {
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     padding: 15px;
-    transition: transform .6s ease-out;
+    transition: transform .5s ease-out;
     cursor: pointer;
 }
 
@@ -358,7 +360,6 @@ footer small {
 
     .navbar {
         display: block;
-         transition:  .5s linear;
     }
 
     .navbar .nav-items ul li,
@@ -378,26 +379,21 @@ footer small {
         display: block;
         position: absolute;
         left: 20px;
-         transition:  .5s linear;
     }
 
     .fa-bars {
         font-size: 16px;
     }
 
-    .nav-items{
-        transition: all .5s linear;
-    }
     .nav-items ul{
         flex-direction: column;
-         transition: display .5s linear;
     }
 
     .nav-items ul li {
-        margin: 20px 0;
+        margin: 15px 0;
+     
     }
-    #menu:checked~.nav-items ul li,
-    #menu:checked~.nav-items ul {
+    #menu:checked~.nav-items ul li {
         cursor: pointer;
         display: block;
        
@@ -450,6 +446,10 @@ footer small {
     }
 }
 
+
+/* =======================
+   responsive for tablet  
+========================== */
 @media only screen and (min-width:688px) and (max-width:992px) {
     .container {
         width: 100%;
@@ -501,3 +501,8 @@ footer small {
         object-fit: cover;
     }
 }
+
+
+/* =======================
+            END 
+========================== */
